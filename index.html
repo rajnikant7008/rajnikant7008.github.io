@@ -1117,14 +1117,21 @@
     });
 
     $(window).on('scroll', function() {
-      var pos = $(document).scrollTop() + 80;
-      $('.sidebar-nav a').each(function() {
+      var links = $('.sidebar-nav a');
+      var atBottom = $(window).scrollTop() + $(window).height() >= $(document).height() - 5;
+      if (atBottom) {
+        links.removeClass('active');
+        links.last().addClass('active');
+        return;
+      }
+      var pos = $(document).scrollTop() + 100;
+      var current = null;
+      links.each(function() {
         var t = $(this).attr('href');
-        if ($(t).length) {
-          var top = $(t).offset().top, bot = top + $(t).outerHeight();
-          if (pos >= top && pos < bot) { $('.sidebar-nav a').removeClass('active'); $(this).addClass('active'); }
-        }
+        if ($(t).length && $(t).offset().top <= pos) { current = $(this); }
       });
+      links.removeClass('active');
+      if (current) current.addClass('active');
     });
   </script>
 </body>
