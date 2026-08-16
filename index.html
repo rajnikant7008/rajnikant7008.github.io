@@ -2,39 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Rajnikant Raman — Engineering Leader</title>
-  <meta name="description" content="Engineering Leader at Adyen with 11+ years in FinTech & Payments. Based in Amsterdam.">
+  <title>Rajnikant Raman — Engineering Leader | FinTech &amp; Payments</title>
+  <meta name="description" content="Engineering Manager at Adyen, ex-Zettle by PayPal. 11+ years building mission-critical payment systems at global scale. Based in Amsterdam.">
   <meta name="author" content="Rajnikant Raman">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:type" content="profile">
-  <meta property="og:title" content="Rajnikant Raman — Engineering Leader | FinTech & Payments">
-  <meta property="og:description" content="Engineering Leader at Adyen, ex-PayPal. 11+ years in FinTech & Payments. Based in Amsterdam.">
-  <meta property="og:image" content="https://rajnikant7008.github.io/images/profile.png">
-  <meta property="og:url" content="https://rajnikant7008.github.io">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Rajnikant Raman — Engineering Leader">
-  <meta name="twitter:description" content="Engineering Leader at Adyen with 11+ years in FinTech & Payments. Based in Amsterdam.">
-  <meta name="twitter:image" content="https://rajnikant7008.github.io/images/profile.png">
+  <meta name="theme-color" content="#080c14">
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
-  <link rel="canonical" href="https://rajnikant7008.github.io">
+  <link rel="canonical" href="https://rajnikant7008.github.io/">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Rajnikant Raman">
+  <meta property="og:title" content="Rajnikant Raman — Engineering Leader | FinTech &amp; Payments">
+  <meta property="og:description" content="Engineering Manager at Adyen, ex-Zettle by PayPal. 11+ years building mission-critical payment systems at global scale. Based in Amsterdam.">
+  <meta property="og:image" content="https://rajnikant7008.github.io/images/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Rajnikant Raman, Engineering Manager at Adyen — 3+ years leading teams, 20+ engineers hired, 50x platform growth, 3 countries.">
+  <meta property="og:url" content="https://rajnikant7008.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rajnikant Raman — Engineering Leader | FinTech &amp; Payments">
+  <meta name="twitter:description" content="Engineering Manager at Adyen, ex-Zettle by PayPal. 11+ years building mission-critical payment systems at global scale.">
+  <meta name="twitter:image" content="https://rajnikant7008.github.io/images/og-card.jpg">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Rajnikant Raman",
-    "jobTitle": "Engineering Leader",
+    "jobTitle": "Engineering Manager",
+    "description": "Engineering leader with 11+ years building mission-critical payment systems at global scale.",
+    "image": "https://rajnikant7008.github.io/images/og-card.jpg",
     "worksFor": { "@type": "Organization", "name": "Adyen" },
-    "url": "https://rajnikant7008.github.io",
-    "email": "rajnikant7008@gmail.com",
+    "url": "https://rajnikant7008.github.io/",
     "address": { "@type": "PostalAddress", "addressLocality": "Amsterdam", "addressCountry": "NL" },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "National Institute of Technology, Patna",
+      "sameAs": "https://www.nitp.ac.in/"
+    },
+    "knowsAbout": [
+      "Engineering Management",
+      "Distributed Systems",
+      "Payments",
+      "FinTech",
+      "Platform Scalability",
+      "Real-time Streaming"
+    ],
+    "knowsLanguage": ["en", "hi", "nl"],
     "sameAs": [
       "https://linkedin.com/in/rajnikant7008",
       "https://github.com/rajnikant7008",
-      "https://stackoverflow.com/users/2212463/rajnikant7008"
+      "https://x.com/rajnikant7008"
     ]
   }
   </script>
-  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
   <style>
     /* ── Reset ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -61,15 +87,33 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-    .glass {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 12px;
-      transition: border-color 0.2s, box-shadow 0.2s;
+    .vh {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
     }
-    .glass:hover {
-      border-color: rgba(79,142,247,0.3);
-      box-shadow: 0 4px 32px rgba(79,142,247,0.08);
+    .skip-link {
+      position: absolute; left: 0.5rem; top: -3rem;
+      background: #2563eb; color: #fff;
+      padding: 0.6rem 1rem; border-radius: 0 0 8px 8px;
+      font-size: 0.82rem; font-weight: 700; z-index: 999;
+      transition: top 0.15s;
+    }
+    .skip-link:focus { top: 0; color: #fff; }
+
+    /* Icons */
+    .ic {
+      width: 1em; height: 1em;
+      flex-shrink: 0;
+      display: inline-block;
+      vertical-align: -0.14em;
+    }
+
+    /* Focus visibility */
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+      outline: 2px solid #7ab3ff;
+      outline-offset: 2px;
+      border-radius: 4px;
     }
 
     /* ═══════════════════════════════════════
@@ -109,6 +153,7 @@
       background: linear-gradient(135deg, #4f8ef7, #06b6d4);
       box-shadow: 0 0 28px rgba(79,142,247,0.45), 0 0 56px rgba(6,182,212,0.15);
       margin-bottom: 1.1rem;
+      line-height: 0;
     }
     .profile-photo {
       width: 92px; height: 92px;
@@ -123,6 +168,7 @@
       color: #eaf0ff;
       letter-spacing: 0.01em;
       margin-bottom: 0.35rem;
+      line-height: 1.3;
     }
     .profile-role {
       font-size: 0.7rem;
@@ -132,8 +178,8 @@
       line-height: 1.6;
     }
     .profile-tagline {
-      font-size: 0.72rem;
-      color: #4a5a78;
+      font-size: 0.74rem;
+      color: #8195b6;
       margin-top: 0.4rem;
     }
 
@@ -152,16 +198,17 @@
       border-radius: 7px;
       font-size: 0.72rem;
       font-weight: 600;
-      color: #4a5a78;
+      color: #94a6c4;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       border-left: 2px solid transparent;
       transition: all 0.18s;
+      white-space: nowrap;
     }
-    .sidebar-nav a i { width: 13px; font-size: 0.75rem; color: #4f8ef7; }
+    .sidebar-nav a .ic { font-size: 0.9rem; color: #4f8ef7; }
     .sidebar-nav a:hover, .sidebar-nav a.active {
       background: rgba(79,142,247,0.08);
-      color: #c8d4e8;
+      color: #eaf0ff;
       border-left-color: #4f8ef7;
       box-shadow: inset 4px 0 16px rgba(79,142,247,0.06);
     }
@@ -170,11 +217,11 @@
     .contact-list { display: flex; flex-direction: column; gap: 0.6rem; }
     .contact-item {
       display: flex; align-items: flex-start; gap: 0.6rem;
-      font-size: 0.73rem; color: #4a5a78;
+      font-size: 0.76rem; color: #94a6c4;
     }
-    .contact-item i { color: #4f8ef7; margin-top: 2px; flex-shrink: 0; width: 13px; }
-    .contact-item a { color: #4a5a78; transition: color 0.15s; }
-    .contact-item a:hover { color: #4f8ef7; }
+    .contact-item .ic { color: #4f8ef7; margin-top: 3px; font-size: 0.9rem; }
+    .contact-item a { color: #94a6c4; transition: color 0.15s; word-break: break-word; }
+    .contact-item a:hover { color: #7ab3ff; }
 
     /* Social */
     .social-row { display: flex; gap: 0.55rem; justify-content: center; flex-wrap: wrap; }
@@ -184,60 +231,30 @@
       background: rgba(255,255,255,0.04);
       border: 1px solid rgba(255,255,255,0.07);
       display: flex; align-items: center; justify-content: center;
-      color: #4a5a78; font-size: 0.8rem;
+      color: #94a6c4; font-size: 0.95rem;
       transition: all 0.18s;
     }
     .social-row a:hover {
       background: rgba(79,142,247,0.15);
       border-color: rgba(79,142,247,0.4);
-      color: #4f8ef7;
+      color: #7ab3ff;
       box-shadow: 0 0 12px rgba(79,142,247,0.25);
     }
 
-    /* Skill tags */
-    .skills-block { display: flex; flex-direction: column; gap: 1rem; }
-    .skill-group-label {
-      font-size: 0.62rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: #4f8ef7;
-      font-weight: 700;
-      margin-bottom: 0.4rem;
-    }
-    .tag-cloud { display: flex; flex-wrap: wrap; gap: 0.3rem; }
-    .tag {
-      font-size: 0.64rem;
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-weight: 500;
-      line-height: 1.5;
-      transition: all 0.15s;
-      cursor: default;
-    }
-    .tag-lead {
-      background: rgba(79,142,247,0.12);
-      border: 1px solid rgba(79,142,247,0.35);
-      color: #93c5fd;
-    }
-    .tag-lead:hover { background: rgba(79,142,247,0.2); box-shadow: 0 0 8px rgba(79,142,247,0.25); }
-    .tag-tech {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
-      color: #8899bb;
-    }
-    .tag-tech:hover { border-color: rgba(6,182,212,0.35); color: #67e8f9; }
-
     /* CTA */
-    .sidebar-cta {
+    .sidebar-ctas { display: flex; flex-direction: column; gap: 0.5rem; }
+    .sidebar-cta, .sidebar-cta-outline {
       display: flex; align-items: center; justify-content: center; gap: 0.5rem;
-      background: linear-gradient(120deg, #2563eb, #0891b2);
-      color: #fff;
       padding: 0.65rem;
       border-radius: 8px;
       font-size: 0.72rem;
       font-weight: 700;
       letter-spacing: 0.06em;
       text-transform: uppercase;
+    }
+    .sidebar-cta {
+      background: linear-gradient(120deg, #2563eb, #0891b2);
+      color: #fff;
       transition: opacity 0.18s, box-shadow 0.18s;
       box-shadow: 0 4px 20px rgba(37,99,235,0.35);
     }
@@ -247,16 +264,9 @@
       color: #fff;
     }
     .sidebar-cta-outline {
-      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
       border: 1px solid rgba(79,142,247,0.7);
       background: rgba(79,142,247,0.1);
-      color: #a8c8ff;
-      padding: 0.65rem;
-      border-radius: 8px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      color: #bcd4ff;
       transition: border-color 0.18s, color 0.18s, background 0.18s;
     }
     .sidebar-cta-outline:hover {
@@ -276,6 +286,8 @@
       flex-direction: column;
     }
 
+    .print-header { display: none; }
+
     /* Section */
     .section {
       padding: 3rem 3.5rem;
@@ -289,7 +301,7 @@
       height: 1px;
       background: linear-gradient(90deg, transparent, rgba(79,142,247,0.15), transparent);
     }
-    .section:first-child::before { display: none; }
+    .section:first-of-type::before { display: none; }
 
     .section-header {
       display: flex; align-items: center; gap: 0.85rem;
@@ -301,7 +313,7 @@
       border: 1px solid rgba(79,142,247,0.2);
       border-radius: 9px;
       display: flex; align-items: center; justify-content: center;
-      color: #4f8ef7; font-size: 0.85rem;
+      color: #4f8ef7; font-size: 1rem;
       flex-shrink: 0;
       box-shadow: 0 0 12px rgba(79,142,247,0.15);
     }
@@ -312,11 +324,18 @@
       letter-spacing: 0.2em;
     }
 
-    /* ── Skills (main) ── */
+    /* ── Skills ── */
     .skills-main-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
+    }
+    /* Leadership leads the section: full-width row, two-column list */
+    .skill-group.lead-group { grid-column: 1 / -1; }
+    .lead-group .skill-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.4rem 1.75rem;
     }
     .skill-group {
       background: rgba(255,255,255,0.02);
@@ -339,59 +358,24 @@
       border-bottom: 1px solid rgba(255,255,255,0.06);
       display: flex; align-items: center; gap: 0.5rem;
     }
-    .skill-group-title i { font-size: 0.75rem; }
+    .skill-group-title .ic { font-size: 0.95rem; }
     .skill-list { display: flex; flex-direction: column; gap: 0.4rem; }
     .skill-item {
       display: flex; align-items: center; gap: 0.6rem;
-      font-size: 0.85rem; color: #8899bb;
+      font-size: 0.85rem; color: #9aabc9;
       padding: 0.3rem 0;
     }
-    .skill-item i { color: #4f8ef7; width: 14px; font-size: 0.75rem; flex-shrink: 0; }
-    .skill-tags-inline { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .skill-item .ic { color: #4f8ef7; font-size: 0.95rem; }
 
     /* ── About ── */
-    .about-intro {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 2rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-    .about-photo-wrap {
-      flex-shrink: 0;
-      padding: 3px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #4f8ef7, #06b6d4);
-      box-shadow: 0 0 28px rgba(79,142,247,0.4), 0 0 56px rgba(6,182,212,0.12);
-    }
-    .about-photo {
-      width: 88px; height: 88px;
-      border-radius: 50%;
-      border: 3px solid #080c14;
-      object-fit: cover;
-      display: block;
-    }
-    .about-identity { flex: 1; }
-    .about-name {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #eaf0ff;
-      line-height: 1.2;
-      margin-bottom: 0.3rem;
-    }
-    .about-role {
-      font-size: 0.82rem;
-      font-weight: 600;
-      margin-bottom: 0.4rem;
-    }
     .about-meta {
-      font-size: 0.75rem;
-      color: #4a5a78;
-      display: flex; gap: 1.25rem; flex-wrap: wrap;
+      font-size: 0.78rem;
+      color: #8195b6;
+      display: flex; gap: 1.5rem; flex-wrap: wrap;
+      margin-bottom: 1.5rem;
     }
-    .about-meta span { display: flex; align-items: center; gap: 0.35rem; }
-    .about-meta i { color: #4f8ef7; }
+    .about-meta span { display: flex; align-items: center; gap: 0.4rem; }
+    .about-meta .ic { color: #4f8ef7; font-size: 0.95rem; }
     .about-lead {
       font-size: 1.05rem;
       font-weight: 600;
@@ -402,8 +386,14 @@
     .about-body {
       font-size: 0.88rem;
       line-height: 1.9;
-      color: #6a7d9e;
+      color: #9aabc9;
     }
+    .about-focus {
+      margin-top: 0.75rem;
+      font-style: italic;
+      color: #9aabc9;
+    }
+    .about-focus .ic { color: #4f8ef7; margin-right: 0.4rem; }
     .stat-row {
       display: flex; gap: 1rem;
       margin-top: 2.25rem;
@@ -418,6 +408,7 @@
       background: rgba(255,255,255,0.02);
       border: 1px solid rgba(255,255,255,0.06);
       text-align: center;
+      display: flex; flex-direction: column; justify-content: center;
       transition: border-color 0.2s, box-shadow 0.2s;
     }
     .stat-card:hover {
@@ -430,13 +421,21 @@
       line-height: 1;
       display: block;
     }
+    .stat-val small { font-size: 1.2rem; }
     .stat-lbl {
-      font-size: 0.6rem;
+      font-size: 0.62rem;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: #4a5a78;
-      margin-top: 0.4rem;
+      color: #8195b6;
+      margin-top: 0.45rem;
       display: block;
+    }
+    .stat-sub {
+      font-size: 0.6rem;
+      color: #7d90b0;
+      margin-top: 0.3rem;
+      display: block;
+      line-height: 1.35;
     }
 
     /* ── Timeline ── */
@@ -467,25 +466,29 @@
     .tl-body { flex: 1; padding-top: 1px; }
     .tl-company {
       font-size: 1rem; font-weight: 700; color: #eaf0ff;
+      line-height: 1.3;
     }
     .tl-company a { color: #eaf0ff; transition: color 0.15s; }
-    .tl-company a:hover { color: #4f8ef7; }
+    .tl-company a:hover { color: #7ab3ff; }
     .tl-role {
       font-size: 0.8rem; font-weight: 600;
       margin-top: 0.15rem;
     }
     .tl-meta {
       display: flex; gap: 1.25rem; flex-wrap: wrap;
-      font-size: 0.7rem; color: #2e3f5c;
-      margin-top: 0.3rem;
+      font-size: 0.74rem; color: #8195b6;
+      margin-top: 0.35rem;
     }
-    .tl-meta span { display: flex; align-items: center; gap: 0.3rem; }
+    .tl-meta span { display: flex; align-items: center; gap: 0.35rem; }
+    .tl-meta .ic { font-size: 0.9rem; }
     .tl-context {
       margin-top: 0.55rem;
-      font-size: 0.72rem;
-      color: #4a5a78;
+      font-size: 0.75rem;
+      color: #8195b6;
       font-style: italic;
+      display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap;
     }
+    .tl-context .ic { font-size: 0.9rem; color: #4f8ef7; font-style: normal; }
     .tl-bullets {
       margin-top: 0.9rem;
       padding-left: 1rem;
@@ -493,18 +496,19 @@
       display: flex; flex-direction: column; gap: 0.5rem;
     }
     .tl-bullets li {
-      font-size: 0.86rem; color: #5a6e90; line-height: 1.65;
+      font-size: 0.86rem; color: #9aabc9; line-height: 1.65;
       padding-left: 1rem;
       position: relative;
     }
     .tl-bullets li::before {
       content: '';
-      position: absolute; left: 0; top: 0.6em;
+      position: absolute; left: 0; top: 0.62em;
       width: 4px; height: 4px;
       border-radius: 50%;
       background: #4f8ef7;
       box-shadow: 0 0 6px rgba(79,142,247,0.7);
     }
+    .tl-bullets strong { color: #c8d4e8; font-weight: 600; }
 
     /* ── Grid ── */
     .two-col {
@@ -528,21 +532,22 @@
     }
     .info-card-title {
       font-size: 0.9rem; font-weight: 700; color: #c8d4e8;
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.2rem; line-height: 1.4;
     }
     .info-card-title a { color: #c8d4e8; transition: color 0.15s; }
-    .info-card-title a:hover { color: #4f8ef7; }
+    .info-card-title a:hover { color: #7ab3ff; }
     .info-card-sub {
-      font-size: 0.72rem; font-weight: 600;
+      font-size: 0.74rem; font-weight: 600;
       margin-bottom: 0.3rem;
+      display: flex; align-items: center; gap: 0.35rem;
     }
-    .info-card-meta { font-size: 0.7rem; color: #2e3f5c; }
-    .info-card-body { font-size: 0.78rem; color: #4a5a78; margin-top: 0.5rem; line-height: 1.6; }
+    .info-card-meta { font-size: 0.74rem; color: #8195b6; }
+    .info-card-body { font-size: 0.8rem; color: #9aabc9; margin-top: 0.5rem; line-height: 1.6; }
 
     /* Achievements */
     .ach-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 1rem;
     }
     .ach-card {
@@ -563,11 +568,12 @@
       background: rgba(250,204,21,0.08);
       border: 1px solid rgba(250,204,21,0.18);
       display: flex; align-items: center; justify-content: center;
-      color: #fbbf24; font-size: 0.82rem;
+      color: #fbbf24; font-size: 1rem;
       flex-shrink: 0;
     }
-    .ach-text { font-size: 0.79rem; color: #4a5a78; line-height: 1.55; display: flex; flex-direction: column; }
-    .ach-text strong { color: #c8d4e8; display: block; margin-bottom: 0.5rem; font-size: 0.82rem; min-height: 2.4rem; }
+    .ach-body { min-width: 0; }
+    .ach-text { font-size: 0.8rem; color: #9aabc9; line-height: 1.55; }
+    .ach-title { color: #eaf0ff; margin: 0 0 0.4rem; font-size: 0.83rem; font-weight: 700; line-height: 1.4; letter-spacing: 0; }
 
     /* More */
     .more-grid {
@@ -580,15 +586,21 @@
       border: 1px solid rgba(255,255,255,0.06);
       border-radius: 12px;
       padding: 1.35rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .more-card:hover {
+      border-color: rgba(79,142,247,0.25);
+      box-shadow: 0 4px 24px rgba(79,142,247,0.07);
     }
     .more-card-title {
       font-size: 0.65rem; font-weight: 800;
       text-transform: uppercase; letter-spacing: 0.14em;
       margin-bottom: 0.85rem;
-      display: flex; align-items: center; gap: 0.4rem;
+      display: flex; align-items: center; gap: 0.45rem;
     }
-    .more-list { display: flex; flex-direction: column; gap: 0.3rem; }
-    .more-list li { font-size: 0.82rem; color: #4a5a78; }
+    .more-card-title .ic { font-size: 0.95rem; }
+    .more-list { display: flex; flex-direction: column; gap: 0.35rem; }
+    .more-list li { font-size: 0.83rem; color: #9aabc9; line-height: 1.55; }
 
     /* Contact */
     .contact-grid {
@@ -601,7 +613,7 @@
       width: 100%;
       padding: 0.72rem 1rem;
       background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
       border-radius: 8px;
       font-size: 0.86rem;
       color: #c8d4e8;
@@ -609,14 +621,15 @@
       transition: border-color 0.18s, box-shadow 0.18s;
       font-family: inherit;
     }
-    .form-field input::placeholder, .form-field textarea::placeholder { color: #2e3f5c; }
+    .form-field input::placeholder, .form-field textarea::placeholder { color: #7d90b0; }
     .form-field input:focus, .form-field textarea:focus {
-      border-color: rgba(79,142,247,0.5);
-      box-shadow: 0 0 0 3px rgba(79,142,247,0.1);
+      border-color: rgba(79,142,247,0.6);
+      box-shadow: 0 0 0 3px rgba(79,142,247,0.12);
     }
     .form-field textarea { min-height: 130px; resize: vertical; }
     .btn-submit {
       display: inline-flex; align-items: center; gap: 0.5rem;
+      align-self: flex-start;
       background: linear-gradient(120deg, #2563eb, #0891b2);
       color: #fff; border: none;
       padding: 0.72rem 1.75rem;
@@ -627,13 +640,16 @@
       font-family: inherit;
       box-shadow: 0 4px 18px rgba(37,99,235,0.4);
     }
-    .btn-submit:hover { opacity: 0.9; box-shadow: 0 4px 28px rgba(37,99,235,0.6); }
-    #message-warning, #message-success {
-      display: none; font-size: 0.84rem;
-      padding: 0.75rem 1rem; border-radius: 8px; margin-top: 0.25rem;
+    .btn-submit:hover:not(:disabled) { opacity: 0.9; box-shadow: 0 4px 28px rgba(37,99,235,0.6); }
+    .btn-submit:disabled { opacity: 0.65; cursor: progress; }
+    .form-status { margin-top: 0.75rem; }
+    .form-status p {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.84rem;
+      padding: 0.75rem 1rem; border-radius: 8px;
     }
-    #message-success { background: rgba(16,185,129,0.1); color: #34d399; border: 1px solid rgba(52,211,153,0.2); }
-    #message-warning { background: rgba(239,68,68,0.1);  color: #f87171; border: 1px solid rgba(248,113,113,0.2); }
+    .form-status .ok  { background: rgba(16,185,129,0.1); color: #4ade80; border: 1px solid rgba(52,211,153,0.25); }
+    .form-status .err { background: rgba(239,68,68,0.1);  color: #f87171; border: 1px solid rgba(248,113,113,0.25); }
 
     .ci-wrap { display: flex; flex-direction: column; gap: 1.25rem; }
     .ci-item { display: flex; gap: 1rem; align-items: flex-start; }
@@ -643,12 +659,12 @@
       border: 1px solid rgba(79,142,247,0.18);
       border-radius: 9px;
       display: flex; align-items: center; justify-content: center;
-      color: #4f8ef7; font-size: 0.88rem; flex-shrink: 0;
+      color: #4f8ef7; font-size: 1.05rem; flex-shrink: 0;
     }
-    .ci-label { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.1em; color: #2e3f5c; margin-bottom: 0.2rem; }
-    .ci-value { font-size: 0.87rem; color: #c8d4e8; font-weight: 500; }
+    .ci-label { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8195b6; margin-bottom: 0.2rem; }
+    .ci-value { font-size: 0.87rem; color: #c8d4e8; font-weight: 500; word-break: break-word; }
     .ci-value a { color: #c8d4e8; transition: color 0.15s; }
-    .ci-value a:hover { color: #4f8ef7; }
+    .ci-value a:hover { color: #7ab3ff; }
 
     /* Footer */
     .site-footer {
@@ -656,9 +672,10 @@
       border-top: 1px solid rgba(255,255,255,0.04);
       padding: 1.25rem 3.5rem;
       display: flex; justify-content: space-between; align-items: center;
+      gap: 1rem;
       margin-top: auto;
     }
-    .footer-copy { font-size: 0.7rem; color: #2e3f5c; }
+    .footer-copy { font-size: 0.74rem; color: #8195b6; }
     .footer-social { display: flex; gap: 0.5rem; }
     .footer-social a {
       width: 29px; height: 29px;
@@ -666,13 +683,13 @@
       background: rgba(255,255,255,0.03);
       border: 1px solid rgba(255,255,255,0.06);
       display: flex; align-items: center; justify-content: center;
-      color: #2e3f5c; font-size: 0.75rem;
+      color: #8195b6; font-size: 0.9rem;
       transition: all 0.18s;
     }
     .footer-social a:hover {
       background: rgba(79,142,247,0.12);
       border-color: rgba(79,142,247,0.3);
-      color: #4f8ef7;
+      color: #7ab3ff;
       box-shadow: 0 0 10px rgba(79,142,247,0.2);
     }
 
@@ -683,25 +700,118 @@
       .section { padding: 2.5rem 2rem; }
       .section::before { left: 2rem; right: 2rem; }
       .site-footer { padding: 1.25rem 2rem; }
+      .skills-main-grid { grid-template-columns: 1fr 1fr; }
+      .more-grid { grid-template-columns: 1fr 1fr; }
     }
+
+    /* Compact mobile header: content starts far sooner. */
     @media (max-width: 768px) {
       body { flex-direction: column; }
-      .sidebar { width: 100%; position: relative; min-height: auto; }
+      .sidebar {
+        width: 100%; position: static; min-height: auto;
+        border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06);
+      }
       .main-content { margin-left: 0; }
+      .sidebar-inner { padding: 1.1rem 1.25rem 0.9rem; gap: 0.9rem; }
+      .profile {
+        display: flex; align-items: center; gap: 0.9rem; text-align: left;
+      }
+      .profile-photo-wrap { margin-bottom: 0; }
+      .profile-photo { width: 56px; height: 56px; }
+      .profile-name { font-size: 1rem; margin-bottom: 0.15rem; }
+      .sidebar-nav {
+        flex-direction: row; overflow-x: auto; gap: 0.3rem;
+        padding-bottom: 0.3rem; scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+      }
+      .sidebar-nav::-webkit-scrollbar { display: none; }
+      .sidebar-nav a {
+        border-left: none; border-bottom: 2px solid transparent;
+        border-radius: 6px 6px 0 0; padding: 0.4rem 0.6rem;
+      }
+      .sidebar-nav a:hover, .sidebar-nav a.active {
+        border-left-color: transparent; border-bottom-color: #4f8ef7; box-shadow: none;
+      }
+      .sidebar-ctas { flex-direction: row; }
+      .sidebar-ctas a { flex: 1; }
+      /* Duplicated verbatim in the Contact section below. */
+      .sidebar .contact-list, .sidebar .social-row, .sidebar .s-div { display: none; }
       .two-col, .more-grid, .contact-grid, .skills-main-grid { grid-template-columns: 1fr; }
+      .lead-group .skill-list { grid-template-columns: 1fr; }
+      .contact-grid { gap: 2rem; }
       .section { padding: 2rem 1.25rem; }
       .section::before { left: 1.25rem; right: 1.25rem; }
-      .site-footer { padding: 1rem 1.25rem; flex-direction: column; gap: 0.75rem; }
+      .site-footer { padding: 1rem 1.25rem; flex-direction: column; gap: 0.75rem; text-align: center; }
       .stat-row { gap: 0.75rem; }
+      .tl-item { gap: 1rem; }
     }
     @media (max-width: 480px) {
       .ach-grid { grid-template-columns: 1fr; }
-      .stat-card { min-width: 80px; }
+      .stat-card { min-width: 80px; flex-basis: 40%; }
+      .stat-val { font-size: 1.7rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ── Print ── */
+    @media print {
+      body {
+        display: block; background: #fff; color: #000;
+        font-size: 11pt; line-height: 1.45;
+      }
+      .sidebar, .site-footer, #contact, .skip-link, .stat-row { display: none !important; }
+      .main-content { margin: 0; }
+      .print-header {
+        display: block;
+        margin: 0 0 1.1rem;
+        padding-bottom: 0.6rem;
+        border-bottom: 1.5pt solid #000;
+        page-break-after: avoid;
+      }
+      .print-name {
+        margin: 0; font-size: 19pt; font-weight: 800;
+        letter-spacing: -0.01em; color: #000;
+      }
+      .print-role {
+        margin: 0.15rem 0 0; font-size: 10.5pt; font-weight: 600;
+        letter-spacing: 0.06em; text-transform: uppercase; color: #333;
+      }
+      .print-contact { margin: 0.35rem 0 0; font-size: 9.5pt; color: #222; }
+      .section { padding: 0 0 1rem; border: none; page-break-inside: avoid; }
+      .section::before { display: none; }
+      .section-icon { display: none; }
+      .section-title, .grad-text {
+        -webkit-text-fill-color: #000 !important; color: #000 !important;
+        background: none !important;
+      }
+      .section-title { font-size: 12pt; letter-spacing: 0.08em; }
+      .about-lead, .about-body, .skill-item, .tl-bullets li, .more-list li,
+      .ach-text, .info-card-body, .tl-meta, .info-card-meta, .about-meta { color: #222 !important; }
+      .tl-company, .tl-company a, .info-card-title, .info-card-title a,
+      .ach-title, .tl-bullets strong { color: #000 !important; }
+      .skill-group, .info-card, .ach-card, .more-card, .stat-card {
+        border: 1px solid #ccc; box-shadow: none; background: none;
+        page-break-inside: avoid;
+      }
+      .tl-dot, .tl-line { background: #888 !important; box-shadow: none !important; }
+      .tl-item { page-break-inside: avoid; }
+      a { color: #000; }
     }
   </style>
 </head>
 
 <body id="top">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /> <circle cx="12" cy="7" r="4" /></symbol><symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" /> <circle cx="12" cy="12" r="3" /></symbol><symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></symbol><symbol id="i-grad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></symbol><symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /> <path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /> <path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /> <path d="M4 22h16" /> <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /> <path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></symbol><symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /> <path d="M9 18h6" /> <path d="M10 22h4" /></symbol><symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></symbol><symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></symbol><symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" /> <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /> <path d="m7 10 5 5 5-5" /></symbol><symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 12h4" /> <path d="M10 8h4" /> <path d="M14 21v-3a2 2 0 0 0-4 0v3" /> <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" /> <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" /></symbol><symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></symbol><symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <path d="M16 3.128a4 4 0 0 1 0 7.744" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <circle cx="9" cy="7" r="4" /></symbol><symbol id="i-network" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="6" height="6" rx="1" /> <rect x="2" y="16" width="6" height="6" rx="1" /> <rect x="9" y="2" width="6" height="6" rx="1" /> <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" /> <path d="M12 12V8" /></symbol><symbol id="i-trending" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h6v6" /> <path d="m22 7-8.5 8.5-5-5L2 17" /></symbol><symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /> <path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" /></symbol><symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6" /> <path d="m8 6-6 6 6 6" /></symbol><symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /> <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></symbol><symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" /> <path d="m3.3 7 8.7 5 8.7-5" /> <path d="M12 22V12" /></symbol><symbol id="i-shuffle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 14 4 4-4 4" /> <path d="m18 2 4 4-4 4" /> <path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22" /> <path d="M2 6h1.972a4 4 0 0 1 3.6 2.2" /> <path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45" /></symbol><symbol id="i-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></symbol><symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3" /> <path d="M3 5V19A9 3 0 0 0 21 19V5" /> <path d="M3 12A9 3 0 0 0 21 12" /></symbol><symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></symbol><symbol id="i-drive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16h.01" /> <path d="M2.212 11.577a2 2 0 0 0-.212.896V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5.527a2 2 0 0 0-.212-.896L18.55 5.11A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" /> <path d="M21.946 12.013H2.054" /> <path d="M6 16h.01" /></symbol><symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.34-4.34" /> <circle cx="11" cy="11" r="8" /></symbol><symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-5" /> <path d="M15 8V2" /> <path d="M17 8a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1z" /> <path d="M9 8V2" /></symbol><symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v3" /> <path d="M16 2v3" /> <rect x="3" y="3" width="18" height="18" rx="2" /> <path d="M3 9h18" /></symbol><symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v16" /> <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></symbol><symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19v3" /> <path d="M19 10v2a7 7 0 0 1-14 0v-2" /> <rect x="9" y="2" width="6" height="13" rx="3" /></symbol><symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></symbol><symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /> <path d="M2 12h20" /></symbol><symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /></symbol><symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /> <path d="m21.854 2.147-10.94 10.939" /></symbol><symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /> <line x1="12" x2="12" y1="8" y2="12" /> <line x1="12" x2="12.01" y1="16" y2="16" /></symbol><symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></symbol><symbol id="i-spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56" /></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></symbol><symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol><symbol id="i-github" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol><symbol id="i-x" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></symbol></svg>
 
   <!-- ═══════════ SIDEBAR ═══════════ -->
   <aside class="sidebar">
@@ -709,54 +819,58 @@
 
       <div class="profile">
         <div class="profile-photo-wrap">
-          <img src="images/profile.png" alt="Rajnikant Raman" class="profile-photo">
+          <picture>
+            <source srcset="images/profile@2x.webp 2x, images/profile.webp 1x" type="image/webp">
+            <img src="images/profile.png" alt="Portrait of Rajnikant Raman" class="profile-photo"
+                 width="92" height="92" fetchpriority="high" decoding="async">
+          </picture>
         </div>
-        <div class="profile-name">Rajnikant Raman</div>
-        <div class="profile-role grad-text">Engineering Leader</div>
-        <div class="profile-tagline">FinTech &amp; Payments &middot; Amsterdam</div>
+        <div>
+          <h1 class="profile-name">Rajnikant Raman</h1>
+          <p class="profile-role grad-text">Engineering Manager</p>
+          <p class="profile-tagline">FinTech &amp; Payments &middot; Amsterdam</p>
+        </div>
       </div>
 
       <hr class="s-div">
 
-      <nav class="sidebar-nav">
-        <a href="#about"><i class="fa fa-user"></i> About</a>
-        <a href="#skills"><i class="fa fa-cogs"></i> Skills</a>
-        <a href="#experience"><i class="fa fa-briefcase"></i> Experience</a>
-        <a href="#education"><i class="fa fa-graduation-cap"></i> Education</a>
-        <a href="#achievements"><i class="fa fa-trophy"></i> Achievements</a>
-        <a href="#more"><i class="fa fa-lightbulb-o"></i> Philosophy</a>
-        <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+      <nav class="sidebar-nav" aria-label="Section navigation">
+        <a href="#about"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg> About</a>
+        <a href="#skills"><svg class="ic" aria-hidden="true"><use href="#i-settings"/></svg> Skills</a>
+        <a href="#experience"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg> Experience</a>
+        <a href="#education"><svg class="ic" aria-hidden="true"><use href="#i-grad"/></svg> Education</a>
+        <a href="#achievements"><svg class="ic" aria-hidden="true"><use href="#i-trophy"/></svg> Achievements</a>
+        <a href="#more"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg> Philosophy</a>
+        <a href="#contact"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg> Contact</a>
       </nav>
 
       <hr class="s-div">
 
       <div class="contact-list">
-        <div class="contact-item">
-          <i class="fa fa-envelope"></i>
+        <p class="contact-item">
+          <svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>
           <a href="mailto:rajnikant7008@gmail.com">rajnikant7008@gmail.com</a>
-        </div>
-
-        <div class="contact-item">
-          <i class="fa fa-map-marker"></i>
+        </p>
+        <p class="contact-item">
+          <svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>
           <span>Amsterdam, Netherlands</span>
-        </div>
+        </p>
       </div>
 
       <hr class="s-div">
 
       <div class="social-row">
-        <a href="https://linkedin.com/in/rajnikant7008" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn profile"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/rajnikant7008" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub profile"><i class="fa fa-github"></i></a>
-        <a href="https://stackoverflow.com/users/2212463/rajnikant7008" target="_blank" rel="noopener noreferrer" title="Stack Overflow" aria-label="Stack Overflow profile"><i class="fa fa-stack-overflow"></i></a>
-        <a href="https://x.com/rajnikant7008" target="_blank" rel="noopener noreferrer" title="X / Twitter" aria-label="X / Twitter profile"><i class="fa fa-twitter"></i></a>
+        <a href="https://linkedin.com/in/rajnikant7008" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        <a href="https://github.com/rajnikant7008" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><svg class="ic" aria-hidden="true"><use href="#i-github"/></svg></a>
+        <a href="https://x.com/rajnikant7008" target="_blank" rel="noopener noreferrer" aria-label="X profile"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></a>
       </div>
 
-      <div style="display:flex; flex-direction:column; gap:0.5rem;">
+      <div class="sidebar-ctas">
         <a href="https://www.linkedin.com/in/rajnikant7008/" target="_blank" rel="noopener noreferrer" class="sidebar-cta">
-          <i class="fa fa-linkedin"></i> Connect on LinkedIn
+          <svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg> Connect on LinkedIn
         </a>
-        <a href="/rajnikant-resume.pdf" download class="sidebar-cta-outline">
-          <i class="fa fa-download"></i> Download CV
+        <a href="rajnikant-resume.pdf" download class="sidebar-cta-outline">
+          <svg class="ic" aria-hidden="true"><use href="#i-download"/></svg> Download CV
         </a>
       </div>
 
@@ -764,268 +878,303 @@
   </aside>
 
   <!-- ═══════════ MAIN ═══════════ -->
-  <main class="main-content">
+  <main class="main-content" id="main">
+
+    <div class="print-header" aria-hidden="true">
+      <p class="print-name">Rajnikant Raman</p>
+      <p class="print-role">Engineering Manager &middot; FinTech &amp; Payments</p>
+      <p class="print-contact">
+        Amsterdam, Netherlands &nbsp;&middot;&nbsp; rajnikant7008@gmail.com
+        &nbsp;&middot;&nbsp; linkedin.com/in/rajnikant7008
+        &nbsp;&middot;&nbsp; rajnikant7008.github.io
+      </p>
+    </div>
 
     <!-- About -->
-    <section class="section" id="about">
+    <section class="section" id="about" aria-labelledby="h-about">
       <div class="section-header">
-        <div class="section-icon"><i class="fa fa-user"></i></div>
-        <span class="section-title grad-text">About</span>
+        <span class="section-icon"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg></span>
+        <h2 class="section-title grad-text" id="h-about">About</h2>
       </div>
-      <div class="about-meta" style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-bottom:1.5rem;">
-        <span><i class="fa fa-map-marker" style="color:#4f8ef7;margin-right:0.4rem;"></i> Amsterdam, Netherlands</span>
-        <span><i class="fa fa-building" style="color:#4f8ef7;margin-right:0.4rem;"></i> Adyen</span>
-        <span><i class="fa fa-briefcase" style="color:#4f8ef7;margin-right:0.4rem;"></i> 11+ Years Experience</span>
-      </div>
+      <p class="about-meta">
+        <span><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg> Amsterdam, Netherlands</span>
+        <span><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg> Adyen</span>
+        <span><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg> 11+ yrs engineering &middot; 3+ yrs leading</span>
+      </p>
       <p class="about-lead">An engineering leader who builds <span class="grad-text">scalable platforms</span> and high-performing teams in FinTech &amp; Payments.</p>
-      <p class="about-body">11+ years of delivering mission-critical systems at global scale — from compliance and risk infrastructure at PayPal to in-person payments platforms at Adyen. Committed to aligning engineering with business outcomes, raising the bar on delivery standards, and growing engineers into their next level of impact. Focused on scaling engineering organizations and the leaders within them.</p>
-      <p class="about-body" style="margin-top:0.75rem; font-style:italic; color:#6a7d9e;"><i class="fa fa-bolt" style="color:#4f8ef7; margin-right:0.4rem;"></i>Currently focused on: building engineering teams and processes that can sustain 10x growth — from hiring frameworks to technical career ladders that develop the next generation of engineering leaders.</p>
+      <p class="about-body">11+ years building mission-critical payment systems at global scale — from compliance and risk infrastructure at Zettle by PayPal to in-person payments at Adyen. Track record of scaling platforms 50x, hiring and growing high-performing teams, and establishing org-wide engineering culture and standards. Focused on aligning technical strategy with business outcomes and scaling engineering organizations across FinTech &amp; Payments.</p>
+      <p class="about-body about-focus"><svg class="ic" aria-hidden="true"><use href="#i-zap"/></svg>Currently focused on building engineering teams and processes that can sustain 10x growth — from hiring frameworks to technical career ladders that develop the next generation of engineering leaders.</p>
       <div class="stat-row">
         <div class="stat-card">
-          <span class="stat-val grad-text">11<span style="font-size:1.2rem">+</span></span>
-          <span class="stat-lbl">Years Experience</span>
+          <span class="stat-val grad-text">3<small>+</small></span>
+          <span class="stat-lbl">Years Leading Teams</span>
+          <span class="stat-sub">11+ yrs engineering</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-val grad-text">20<small>+</small></span>
+          <span class="stat-lbl">Engineers Hired</span>
+          <span class="stat-sub">as hiring manager &amp; interviewer</span>
         </div>
         <div class="stat-card">
           <span class="stat-val grad-text">50x</span>
-          <span class="stat-lbl">Platform Scale</span>
+          <span class="stat-lbl">Platform Growth</span>
+          <span class="stat-sub">to 1M+ concurrent connections</span>
         </div>
         <div class="stat-card">
           <span class="stat-val grad-text">3</span>
-          <span class="stat-lbl">Countries</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-val grad-text">2</span>
-          <span class="stat-lbl">Publications</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-val grad-text">4</span>
-          <span class="stat-lbl">Awards</span>
+          <span class="stat-lbl">Countries Worked In</span>
+          <span class="stat-sub">India &middot; Sweden &middot; Netherlands</span>
         </div>
       </div>
     </section>
 
     <!-- Skills -->
-    <section class="section" id="skills">
+    <section class="section" id="skills" aria-labelledby="h-skills">
       <div class="section-header">
-        <div class="section-icon"><i class="fa fa-cogs"></i></div>
-        <span class="section-title grad-text">Skills</span>
+        <span class="section-icon"><svg class="ic" aria-hidden="true"><use href="#i-settings"/></svg></span>
+        <h2 class="section-title grad-text" id="h-skills">Skills</h2>
       </div>
       <div class="skills-main-grid">
 
-        <div class="skill-group">
-          <div class="skill-group-title grad-text"><i class="fa fa-users"></i> Leadership</div>
-          <div class="skill-list">
-            <div class="skill-item"><i class="fa fa-sitemap"></i> Engineering Management</div>
-            <div class="skill-item"><i class="fa fa-line-chart"></i> Strategic Planning</div>
-            <div class="skill-item"><i class="fa fa-users"></i> Stakeholder Management</div>
-            <div class="skill-item"><i class="fa fa-graduation-cap"></i> Talent Development</div>
-            <div class="skill-item"><i class="fa fa-compass"></i> Technology Roadmapping</div>
-            <div class="skill-item"><i class="fa fa-cogs"></i> Operational Excellence</div>
-          </div>
+        <div class="skill-group lead-group">
+          <h3 class="skill-group-title grad-text"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg> Leadership &amp; Engineering Management</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg> Hiring &amp; Performance Management</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-grad"/></svg> Career Frameworks &amp; Mentorship</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-trending"/></svg> Organizational Scaling</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-compass"/></svg> Platform &amp; Technical Strategy</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-network"/></svg> Cross-functional Stakeholder Alignment</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg> Roadmap &amp; OKR Planning</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg> Engineering Standards &amp; Ways of Working</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg> Architecture &amp; Decision Governance</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg> Regulatory &amp; Compliance Delivery</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-activity"/></svg> Incident &amp; Reliability Ownership</li>
+          </ul>
         </div>
 
         <div class="skill-group">
-          <div class="skill-group-title grad-text"><i class="fa fa-code"></i> Programming &amp; Frameworks</div>
-          <div class="skill-list">
-            <div class="skill-item"><i class="fa fa-code"></i> Java / Python / Kotlin / Go</div>
-            <div class="skill-item"><i class="fa fa-leaf"></i> Spring Boot / Dropwizard</div>
-            <div class="skill-item"><i class="fa fa-cogs"></i> Terraform / Pulumi</div>
-            <div class="skill-item"><i class="fa fa-cube"></i> Docker / Nomad / Kubernetes</div>
-            <div class="skill-item"><i class="fa fa-random"></i> Apache Kafka / RabbitMQ</div>
-            <div class="skill-item"><i class="fa fa-area-chart"></i> Grafana / Splunk</div>
-          </div>
+          <h3 class="skill-group-title grad-text"><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg> Programming &amp; Frameworks</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg> Java / Python / Kotlin / Go</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg> Spring Boot / Dropwizard</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-settings"/></svg> Terraform / Pulumi</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg> Docker / Nomad / Kubernetes</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-shuffle"/></svg> Apache Kafka / RabbitMQ</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-activity"/></svg> Grafana / Splunk</li>
+          </ul>
         </div>
 
         <div class="skill-group">
-          <div class="skill-group-title grad-text"><i class="fa fa-database"></i> Data, Infrastructure &amp; Protocols</div>
-          <div class="skill-list">
-            <div class="skill-item"><i class="fa fa-cloud"></i> AWS / Google Cloud Platform</div>
-            <div class="skill-item"><i class="fa fa-database"></i> PostgreSQL / CockroachDB</div>
-            <div class="skill-item"><i class="fa fa-hdd-o"></i> Cassandra / Redis</div>
-            <div class="skill-item"><i class="fa fa-search"></i> MongoDB / Elasticsearch</div>
-            <div class="skill-item"><i class="fa fa-plug"></i> Distributed Systems Design</div>
-            <div class="skill-item"><i class="fa fa-bolt"></i> WebSocket / Real-time Streaming</div>
-          </div>
+          <h3 class="skill-group-title grad-text"><svg class="ic" aria-hidden="true"><use href="#i-database"/></svg> Data, Infrastructure &amp; Protocols</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-cloud"/></svg> AWS / GCP / On-prem</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-database"/></svg> PostgreSQL / CockroachDB</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-drive"/></svg> Cassandra / Redis</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg> MongoDB / Elasticsearch</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-plug"/></svg> Distributed Systems Design</li>
+            <li class="skill-item"><svg class="ic" aria-hidden="true"><use href="#i-zap"/></svg> WebSocket / Real-time Streaming</li>
+          </ul>
         </div>
 
       </div>
     </section>
 
     <!-- Experience -->
-    <section class="section" id="experience">
+    <section class="section" id="experience" aria-labelledby="h-exp">
       <div class="section-header">
-        <div class="section-icon"><i class="fa fa-briefcase"></i></div>
-        <span class="section-title grad-text">Professional Experience</span>
+        <span class="section-icon"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg></span>
+        <h2 class="section-title grad-text" id="h-exp">Professional Experience</h2>
       </div>
       <div class="timeline">
 
-        <div class="tl-item">
-          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <article class="tl-item">
+          <div class="tl-left" aria-hidden="true"><div class="tl-dot"></div><div class="tl-line"></div></div>
           <div class="tl-body">
-            <div class="tl-company"><a href="https://www.adyen.com/" target="_blank" rel="noopener noreferrer">Adyen</a></div>
-            <div class="tl-role grad-text">Engineering Manager</div>
-            <div class="tl-meta">
-              <span><i class="fa fa-calendar"></i> July 2022 — Present</span>
-              <span><i class="fa fa-map-marker"></i> Amsterdam, Netherlands</span>
-            </div>
-            <p class="tl-context"><i class="fa fa-code" style="margin-right:0.3rem;"></i>Senior Engineer &nbsp;&rarr;&nbsp; <i class="fa fa-users" style="margin-right:0.3rem;"></i>Engineering Manager &nbsp;&middot;&nbsp; promoted within 8 months</p>
+            <h3 class="tl-company"><a href="https://www.adyen.com/" target="_blank" rel="noopener noreferrer">Adyen</a></h3>
+            <p class="tl-role grad-text">Engineering Manager</p>
+            <p class="tl-meta">
+              <span><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg> July 2022 — Present</span>
+              <span><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg> Amsterdam, Netherlands</span>
+            </p>
+            <p class="tl-context">
+              <svg class="ic" aria-hidden="true"><use href="#i-code"/></svg> Senior Engineer
+              <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+              <svg class="ic" aria-hidden="true"><use href="#i-users"/></svg> Engineering Manager &middot; promoted within 8 months
+            </p>
             <ul class="tl-bullets">
-              <li>Lead the IPP Scalability team of 6 engineers in scaling Adyen's In-Person Payments platform 50x — enabling 1 million+ concurrent connections with latency under 100ms and delivering reliable, high-throughput payment processing for global merchants across millions of devices.</li>
-              <li>Grow and retain high-performing engineers through hands-on hiring, structured mentorship and coaching — building a team culture of ownership, continuous growth and clear career progression at all levels.</li>
-              <li>Own cross-functional technical strategy across product, commercial and partner stakeholders — translating business objectives into engineering roadmaps and delivery commitments.</li>
-              <li>Establish org-wide engineering standards and culture — defining ways of working, technical quality benchmarks and developer experience practices that raise the bar for teams across the organization.</li>
+              <li><strong>Lead the IPP Scalability team</strong>, owning the platform strategy that scaled Adyen's In-Person Payments platform 50x — enabling 1M+ concurrent connections with sub-100ms latency across millions of devices globally.</li>
+              <li><strong>Hire, develop and retain talent</strong> — structured mentorship, clear career frameworks and performance management that grew engineers into senior technical contributors.</li>
+              <li><strong>Drive cross-functional strategy</strong> across product, commercial and partner stakeholders — aligning engineering roadmaps with business outcomes and quarterly OKRs.</li>
+              <li><strong>Define org-wide engineering standards</strong> — ways of working and technical quality benchmarks adopted across multiple teams.</li>
             </ul>
           </div>
-        </div>
+        </article>
 
-        <div class="tl-item">
-          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <article class="tl-item">
+          <div class="tl-left" aria-hidden="true"><div class="tl-dot"></div><div class="tl-line"></div></div>
           <div class="tl-body">
-            <div class="tl-company"><a href="https://www.zettle.com/gb" target="_blank" rel="noopener noreferrer">Zettle by PayPal</a></div>
-            <div class="tl-role grad-text">Senior Backend Developer</div>
-            <div class="tl-meta">
-              <span><i class="fa fa-calendar"></i> May 2019 — June 2022</span>
-              <span><i class="fa fa-map-marker"></i> Stockholm, Sweden</span>
-            </div>
+            <h3 class="tl-company"><a href="https://www.zettle.com/gb" target="_blank" rel="noopener noreferrer">Zettle by PayPal</a></h3>
+            <p class="tl-role grad-text">Senior Backend Developer</p>
+            <p class="tl-meta">
+              <span><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg> May 2019 — June 2022</span>
+              <span><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg> Stockholm, Sweden</span>
+            </p>
             <ul class="tl-bullets">
-              <li>Delivered compliance solutions supporting the migration of millions of merchants across Europe in response to regulatory and banking license changes.</li>
-              <li>Developed risk systems for merchant onboarding (KYC/KYB) and ongoing activity monitoring, improving detection of high-risk events and strengthening platform security.</li>
-              <li>Collaborated with multiple teams and stakeholders to define and evolve the compliance and risk platform architecture, leveraging Java, AWS and event-driven design to deliver scalable, secure backend systems.</li>
+              <li><strong>Led cross-org compliance migration</strong> — coordinating legal, product and engineering to move millions of merchants under European regulatory and banking licence changes.</li>
+              <li><strong>Owned the KYC/KYB risk platform end-to-end</strong> — scoping requirements with stakeholders, designing the systems and driving execution across multiple team boundaries.</li>
+              <li><strong>Mentored junior engineers</strong> and drove architectural decision-making for the compliance domain, establishing patterns adopted by adjacent teams.</li>
             </ul>
           </div>
-        </div>
+        </article>
 
-        <div class="tl-item">
-          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <article class="tl-item">
+          <div class="tl-left" aria-hidden="true"><div class="tl-dot"></div><div class="tl-line"></div></div>
           <div class="tl-body">
-            <div class="tl-company"><a href="https://www.bankbazaar.com" target="_blank" rel="noopener noreferrer">BankBazaar</a></div>
-            <div class="tl-role grad-text">Senior Software Engineer</div>
-            <div class="tl-meta">
-              <span><i class="fa fa-calendar"></i> Dec 2016 — May 2019</span>
-              <span><i class="fa fa-map-marker"></i> Bangalore, India</span>
-            </div>
+            <h3 class="tl-company"><a href="https://www.bankbazaar.com" target="_blank" rel="noopener noreferrer">BankBazaar</a></h3>
+            <p class="tl-role grad-text">Senior Software Engineer</p>
+            <p class="tl-meta">
+              <span><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg> Dec 2016 — May 2019</span>
+              <span><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg> Bangalore, India</span>
+            </p>
+            <p class="tl-context">
+              <svg class="ic" aria-hidden="true"><use href="#i-code"/></svg> Software Engineer 2
+              <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+              <svg class="ic" aria-hidden="true"><use href="#i-code"/></svg> Senior Software Engineer &middot; promoted within a year
+            </p>
             <ul class="tl-bullets">
-              <li>Architected a customer data platform using Java, Kafka and Cassandra — processing millions of real-time events through event-driven streaming pipelines and batch processing to build unified customer profiles, powering personalization and recommendation capabilities.</li>
-              <li>Built an org-wide data warehousing solution with ETL pipelines processing tens of millions of events, enabling enterprise reporting and data-driven decision-making across business and product teams.</li>
-              <li>Mentored and onboarded new engineers, and collaborated with multiple teams to align on platform design and data architecture decisions.</li>
+              <li><strong>Led design and delivery of a customer data platform</strong> processing millions of real-time events on Java, Kafka and Cassandra — driving cross-team alignment on a unified architecture that powered personalization across the product.</li>
+              <li><strong>Drove org-wide data strategy</strong> — built ETL pipelines processing tens of millions of events, enabling executive reporting and data-driven prioritization.</li>
+              <li><strong>Mentored engineers across teams</strong>, led architecture reviews and established technical decision-making practices that improved delivery predictability.</li>
             </ul>
           </div>
-        </div>
+        </article>
 
-        <div class="tl-item">
-          <div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <article class="tl-item">
+          <div class="tl-left" aria-hidden="true"><div class="tl-dot"></div><div class="tl-line"></div></div>
           <div class="tl-body">
-            <div class="tl-company"><a href="https://www.snapdeal.com" target="_blank" rel="noopener noreferrer">Snapdeal</a></div>
-            <div class="tl-role grad-text">Software Engineer</div>
-            <div class="tl-meta">
-              <span><i class="fa fa-calendar"></i> July 2015 — Nov 2016</span>
-              <span><i class="fa fa-map-marker"></i> Bangalore, India</span>
-            </div>
+            <h3 class="tl-company"><a href="https://www.snapdeal.com" target="_blank" rel="noopener noreferrer">Snapdeal</a></h3>
+            <p class="tl-role grad-text">Software Engineer</p>
+            <p class="tl-meta">
+              <span><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg> July 2015 — Nov 2016</span>
+              <span><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg> Bangalore, India</span>
+            </p>
             <ul class="tl-bullets">
-              <li>Developed an end-to-end machine learning pipeline for product ranking — from data pre-processing and feature extraction to model training and real-time prediction — enhancing content discovery and user engagement across high-traffic e-commerce applications.</li>
-              <li>Built scalable user-generated content platforms and APIs serving 5K+ TPS with p99 latency below 10ms.</li>
+              <li><strong>Owned the end-to-end ML pipeline for product ranking</strong> — from problem framing through production deployment — improving discovery metrics across high-traffic e-commerce.</li>
+              <li><strong>Built scalable user-generated content platforms</strong> and APIs serving 5K+ TPS with p99 latency under 10ms.</li>
             </ul>
           </div>
-        </div>
+        </article>
 
-        <div class="tl-item">
-          <div class="tl-left"><div class="tl-dot"></div></div>
+        <article class="tl-item">
+          <div class="tl-left" aria-hidden="true"><div class="tl-dot"></div></div>
           <div class="tl-body">
-            <div class="tl-company"><a href="https://www.iitp.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Technology, Patna</a></div>
-            <div class="tl-role grad-text">Research Intern</div>
-            <div class="tl-meta">
-              <span><i class="fa fa-calendar"></i> May 2014 — July 2014</span>
-              <span><i class="fa fa-map-marker"></i> Patna, India</span>
-            </div>
+            <h3 class="tl-company"><a href="https://www.iitp.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Technology, Patna</a></h3>
+            <p class="tl-role grad-text">Research Intern</p>
+            <p class="tl-meta">
+              <span><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg> May 2014 — July 2014</span>
+              <span><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg> Patna, India</span>
+            </p>
             <ul class="tl-bullets">
               <li>Designed and implemented an NLP system to detect disorder mentions in clinical patient records, combining supervised and unsupervised methods to advance automated clinical text analysis.</li>
             </ul>
           </div>
-        </div>
+        </article>
 
       </div>
     </section>
 
     <!-- Education + Publications -->
-    <section class="section" id="education">
+    <section class="section" id="education" aria-labelledby="h-edu">
       <div class="section-header">
-        <div class="section-icon"><i class="fa fa-graduation-cap"></i></div>
-        <span class="section-title grad-text">Education &amp; Publications</span>
+        <span class="section-icon"><svg class="ic" aria-hidden="true"><use href="#i-grad"/></svg></span>
+        <h2 class="section-title grad-text" id="h-edu">Education &amp; Publications</h2>
       </div>
       <div class="two-col">
         <div class="info-card">
-          <div class="info-card-title"><a href="https://www.nitp.ac.in/" target="_blank" rel="noopener noreferrer">National Institute of Technology, Patna</a></div>
-          <div class="info-card-sub grad-text">B.Tech — Information Technology</div>
-          <div class="info-card-meta">July 2011 — May 2015 &nbsp;&middot;&nbsp; GPA: 9.12 &nbsp;&middot;&nbsp; Rank: 1</div>
-          <div class="info-card-body">Graduated top of the class. Awarded Director's Gold Medal for academic excellence.</div>
+          <h3 class="info-card-title"><a href="https://www.nitp.ac.in/" target="_blank" rel="noopener noreferrer">National Institute of Technology, Patna</a></h3>
+          <p class="info-card-sub grad-text">B.Tech — Information Technology</p>
+          <p class="info-card-meta">July 2011 — May 2015 &nbsp;&middot;&nbsp; GPA: 9.12 &nbsp;&middot;&nbsp; Rank: 1</p>
+          <p class="info-card-body">Graduated top of the class. Awarded the Director's Gold Medal for academic excellence.</p>
         </div>
         <div class="pub-stack">
           <div class="info-card">
-            <div class="info-card-title"><a href="https://rd.springer.com/chapter/10.1007/978-3-319-32467-8_118" target="_blank" rel="noopener noreferrer">Privacy Enhancement in E-Mail Clients</a></div>
-            <div class="info-card-sub grad-text"><i class="fa fa-book"></i>&nbsp; Publication</div>
-            <div class="info-card-meta">Springer International Publishing Switzerland &middot; 2016</div>
+            <h3 class="info-card-title"><a href="https://rd.springer.com/chapter/10.1007/978-3-319-32467-8_118" target="_blank" rel="noopener noreferrer">Privacy Enhancement in E-Mail Clients</a></h3>
+            <p class="info-card-sub grad-text"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg> Conference paper &middot; ITNG 2016</p>
+            <p class="info-card-meta">Springer International Publishing Switzerland &middot; 2016</p>
           </div>
           <div class="info-card">
-            <div class="info-card-title">Product Quality Prediction in a Large E-commerce Environment</div>
-            <div class="info-card-sub grad-text"><i class="fa fa-book"></i>&nbsp; Publication</div>
-            <div class="info-card-meta">Internal Research &middot; Snapdeal, 2016</div>
+            <h3 class="info-card-title">Product Quality Prediction in a Large E-commerce Environment</h3>
+            <p class="info-card-sub grad-text"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg> Internal white paper</p>
+            <p class="info-card-meta">Snapdeal &middot; 2016</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Achievements -->
-    <section class="section" id="achievements">
+    <section class="section" id="achievements" aria-labelledby="h-ach">
       <div class="section-header">
-        <div class="section-icon"><i class="fa fa-trophy"></i></div>
-        <span class="section-title grad-text">Achievements</span>
+        <span class="section-icon"><svg class="ic" aria-hidden="true"><use href="#i-trophy"/></svg></span>
+        <h2 class="section-title grad-text" id="h-ach">Speaking &amp; Awards</h2>
       </div>
       <div class="ach-grid">
         <div class="ach-card">
-          <div class="ach-icon"><i class="fa fa-microphone"></i></div>
-          <div class="ach-text"><strong>Speaker · Adyen Annual Conference 2025</strong> Presented Adyen's Public Cloud vision to an audience of 1,500+ attendees.</div>
+          <span class="ach-icon"><svg class="ic" aria-hidden="true"><use href="#i-mic"/></svg></span>
+          <div class="ach-body">
+            <h3 class="ach-title">Speaker · Adyen Annual Conference, 2025</h3>
+            <p class="ach-text">Presented Adyen's Public Cloud vision to an audience of 1,500+ attendees.</p>
+          </div>
         </div>
         <div class="ach-card">
-          <div class="ach-icon"><i class="fa fa-star"></i></div>
-          <div class="ach-text"><strong>PayPal Spot Award<br>&middot; 2021</strong> Led the European compliance migration across multiple stakeholder teams.</div>
+          <span class="ach-icon"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <div class="ach-body">
+            <h3 class="ach-title">PayPal Spot Award, 2021</h3>
+            <p class="ach-text">Led the European compliance migration across multiple stakeholder teams.</p>
+          </div>
         </div>
         <div class="ach-card">
-          <div class="ach-icon"><i class="fa fa-trophy"></i></div>
-          <div class="ach-text"><strong>Snapdeal Gold Award<br>&middot; 2016</strong> Built the end-to-end ML product ranking pipeline.</div>
+          <span class="ach-icon"><svg class="ic" aria-hidden="true"><use href="#i-trophy"/></svg></span>
+          <div class="ach-body">
+            <h3 class="ach-title">Snapdeal Gold Award, 2016</h3>
+            <p class="ach-text">Built the end-to-end ML product ranking pipeline.</p>
+          </div>
         </div>
         <div class="ach-card">
-          <div class="ach-icon"><i class="fa fa-graduation-cap"></i></div>
-          <div class="ach-text"><strong>Director's Gold Medal<br>&middot; 2015</strong> Ranked 1st in B.Tech, NIT Patna — GPA 9.12.</div>
+          <span class="ach-icon"><svg class="ic" aria-hidden="true"><use href="#i-grad"/></svg></span>
+          <div class="ach-body">
+            <h3 class="ach-title">Director's Gold Medal, 2015</h3>
+            <p class="ach-text">Awarded to the top-ranked graduate in Information Technology.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- More -->
-    <section class="section" id="more">
+    <section class="section" id="more" aria-labelledby="h-more">
       <div class="section-header">
-        <div class="section-icon"><i class="fa fa-lightbulb-o"></i></div>
-        <span class="section-title grad-text">Philosophy</span>
+        <span class="section-icon"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg></span>
+        <h2 class="section-title grad-text" id="h-more">Philosophy</h2>
       </div>
       <div class="more-grid">
         <div class="more-card">
-          <div class="more-card-title grad-text"><i class="fa fa-globe"></i> Languages</div>
+          <h3 class="more-card-title grad-text"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg> Languages</h3>
           <ul class="more-list">
-            <li>English — Professional Working</li>
+            <li>English — Full Professional</li>
             <li>Hindi — Native / Bilingual</li>
             <li>Dutch — A2 (Learning)</li>
           </ul>
         </div>
         <div class="more-card">
-          <div class="more-card-title grad-text"><i class="fa fa-lightbulb-o"></i> Leadership Philosophy</div>
+          <h3 class="more-card-title grad-text"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg> Leadership Philosophy</h3>
           <ul class="more-list">
-            <li>Invest in people first — great products follow</li>
-            <li>Ship outcomes, not activity</li>
-            <li>Engineering excellence is a culture, not a checklist</li>
-            <li>Lead with clarity, especially in ambiguity</li>
+            <li>Autonomy without accountability is drift</li>
+            <li>Reliability belongs in the estimate</li>
+            <li>Excellence is a culture, not a checklist</li>
+            <li>A standard counts when adopted unasked</li>
           </ul>
         </div>
         <div class="more-card">
-          <div class="more-card-title grad-text"><i class="fa fa-heart"></i> Interests</div>
+          <h3 class="more-card-title grad-text"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg> Interests</h3>
           <ul class="more-list">
             <li>Traveling</li>
             <li>Cricket</li>
@@ -1037,36 +1186,47 @@
     </section>
 
     <!-- Contact -->
-    <section class="section" id="contact">
+    <section class="section" id="contact" aria-labelledby="h-contact">
       <div class="section-header">
-        <div class="section-icon"><i class="fa fa-envelope"></i></div>
-        <span class="section-title grad-text">Contact</span>
+        <span class="section-icon"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span>
+        <h2 class="section-title grad-text" id="h-contact">Contact</h2>
       </div>
       <div class="contact-grid">
         <div>
           <form id="contactForm" method="POST" action="https://formspree.io/f/xqeoprjo" class="cf-wrap">
-            <div class="form-field"><input type="text" name="name" placeholder="Your Name" required></div>
-            <div class="form-field"><input type="email" name="email" placeholder="Your Email" required></div>
-            <div class="form-field"><textarea name="message" placeholder="Your Message" required></textarea></div>
+            <div class="form-field">
+              <label class="vh" for="cf-name">Your name</label>
+              <input id="cf-name" type="text" name="name" placeholder="Your Name" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label class="vh" for="cf-email">Your email</label>
+              <input id="cf-email" type="email" name="email" placeholder="Your Email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label class="vh" for="cf-message">Your message</label>
+              <textarea id="cf-message" name="message" placeholder="Your Message" required></textarea>
+            </div>
             <input type="hidden" name="_subject" value="Website Contact">
-            <input type="text" name="_gotcha" style="display:none">
-            <button class="btn-submit" type="submit"><i class="fa fa-paper-plane"></i> Send Message</button>
+            <label class="vh" for="cf-gotcha" aria-hidden="true">Leave this field empty</label>
+            <input id="cf-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+            <button class="btn-submit" type="submit">
+              <svg class="ic" aria-hidden="true"><use href="#i-send"/></svg>
+              <span data-btn-label>Send Message</span>
+            </button>
           </form>
-          <div id="message-warning" style="display:none; color:#f87171; margin-top:0.75rem; font-size:0.85rem;"><i class="fa fa-exclamation-circle"></i> Something went wrong. Please try again.</div>
-          <div id="message-success" style="display:none; color:#4ade80; margin-top:0.75rem; font-size:0.85rem;"><i class="fa fa-check"></i> Your message was sent, thank you!</div>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
         </div>
         <div class="ci-wrap">
           <div class="ci-item">
-            <div class="ci-icon"><i class="fa fa-map-marker"></i></div>
+            <span class="ci-icon"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span>
             <div><div class="ci-label">Location</div><div class="ci-value">Amsterdam, Netherlands</div></div>
           </div>
           <div class="ci-item">
-            <div class="ci-icon"><i class="fa fa-envelope"></i></div>
+            <span class="ci-icon"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span>
             <div><div class="ci-label">Email</div><div class="ci-value"><a href="mailto:rajnikant7008@gmail.com">rajnikant7008@gmail.com</a></div></div>
           </div>
-
           <div class="ci-item">
-            <div class="ci-icon"><i class="fa fa-linkedin"></i></div>
+            <span class="ci-icon"><svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
             <div><div class="ci-label">LinkedIn</div><div class="ci-value"><a href="https://linkedin.com/in/rajnikant7008" target="_blank" rel="noopener noreferrer">linkedin.com/in/rajnikant7008</a></div></div>
           </div>
         </div>
@@ -1074,65 +1234,120 @@
     </section>
 
     <footer class="site-footer">
-      <div class="footer-copy">&copy; 2026 Rajnikant Raman. All rights reserved.</div>
+      <p class="footer-copy">&copy; <span id="year">2026</span> Rajnikant Raman. All rights reserved.</p>
       <div class="footer-social">
-        <a href="https://linkedin.com/in/rajnikant7008" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/rajnikant7008" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-github"></i></a>
-        <a href="https://stackoverflow.com/users/2212463/rajnikant7008" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow"><i class="fa fa-stack-overflow"></i></a>
-        <a href="https://x.com/rajnikant7008" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://linkedin.com/in/rajnikant7008" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        <a href="https://github.com/rajnikant7008" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><svg class="ic" aria-hidden="true"><use href="#i-github"/></svg></a>
+        <a href="https://x.com/rajnikant7008" target="_blank" rel="noopener noreferrer" aria-label="X profile"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></a>
       </div>
     </footer>
 
   </main>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script>
-    $('a[href^="#"]').on('click', function(e) {
-      var t = $(this).attr('href');
-      if ($(t).length) { e.preventDefault(); $('html,body').animate({ scrollTop: $(t).offset().top - 20 }, 500); }
-    });
-    $('#contactForm').on('submit', function(e) {
-      e.preventDefault();
-      var form = $(this);
-      var btn = form.find('.btn-submit');
-      btn.prop('disabled', true).html('<i class="fa fa-spinner fa-spin"></i> Sending...');
-      $.ajax({
-        url: form.attr('action'),
-        method: 'POST',
-        data: form.serialize(),
-        dataType: 'json',
-        headers: { 'Accept': 'application/json' },
-        success: function() {
-          form[0].reset();
-          btn.prop('disabled', false).html('<i class="fa fa-paper-plane"></i> Send Message');
-          $('#message-success').show();
-          $('#message-warning').hide();
-        },
-        error: function() {
-          btn.prop('disabled', false).html('<i class="fa fa-paper-plane"></i> Send Message');
-          $('#message-warning').show();
-          $('#message-success').hide();
-        }
+  (function () {
+    'use strict';
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var navLinks = Array.prototype.slice.call(
+      document.querySelectorAll('.sidebar-nav a[href^="#"]')
+    );
+
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        var y = target.getBoundingClientRect().top + window.pageYOffset - 20;
+        window.scrollTo({ top: y, behavior: reduced ? 'auto' : 'smooth' });
+        history.replaceState(null, '', link.getAttribute('href'));
       });
     });
 
-    $(window).on('scroll', function() {
-      var links = $('.sidebar-nav a');
-      var atBottom = $(window).scrollTop() + $(window).height() >= $(document).height() - 5;
+    // Scroll spy
+    var sections = navLinks
+      .map(function (l) { return document.querySelector(l.getAttribute('href')); })
+      .filter(Boolean);
+
+    function spy() {
+      var pos = window.pageYOffset + 100;
+      var atBottom =
+        window.pageYOffset + window.innerHeight >=
+        document.documentElement.scrollHeight - 5;
+      var idx = -1;
       if (atBottom) {
-        links.removeClass('active');
-        links.last().addClass('active');
-        return;
+        idx = sections.length - 1;
+      } else {
+        sections.forEach(function (s, i) {
+          if (s.offsetTop <= pos) idx = i;
+        });
       }
-      var pos = $(document).scrollTop() + 100;
-      var current = null;
-      links.each(function() {
-        var t = $(this).attr('href');
-        if ($(t).length && $(t).offset().top <= pos) { current = $(this); }
+      navLinks.forEach(function (l, i) {
+        l.classList.toggle('active', i === idx);
+        if (i === idx) { l.setAttribute('aria-current', 'true'); }
+        else { l.removeAttribute('aria-current'); }
       });
-      links.removeClass('active');
-      if (current) current.addClass('active');
+    }
+
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function () { spy(); ticking = false; });
+    }, { passive: true });
+    spy();
+
+    // Contact form
+    var form = document.getElementById('contactForm');
+    var status = document.getElementById('formStatus');
+    var btn = form.querySelector('.btn-submit');
+    var label = btn.querySelector('[data-btn-label]');
+    var icon = btn.querySelector('use');
+
+    function setStatus(kind, text, iconId) {
+      status.innerHTML = '';
+      var p = document.createElement('p');
+      p.className = kind;
+      var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('class', 'ic');
+      svg.setAttribute('aria-hidden', 'true');
+      var use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+      use.setAttribute('href', iconId);
+      svg.appendChild(use);
+      p.appendChild(svg);
+      p.appendChild(document.createTextNode(text));
+      status.appendChild(p);
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      btn.disabled = true;
+      label.textContent = 'Sending...';
+      icon.setAttribute('href', '#i-spinner');
+      status.innerHTML = '';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error('Request failed');
+          form.reset();
+          setStatus('ok', 'Your message was sent, thank you!', '#i-check');
+        })
+        .catch(function () {
+          setStatus('err', 'Something went wrong. Please email me directly.', '#i-alert');
+        })
+        .then(function () {
+          btn.disabled = false;
+          label.textContent = 'Send Message';
+          icon.setAttribute('href', '#i-send');
+        });
     });
+  })();
   </script>
 </body>
 </html>
